@@ -1,0 +1,77 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" /> -->
+	<title>Test interface graphique P4Pass</title>
+	
+	<!-- Debug mode - css & js
+	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile-1.1.1.css" />
+	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile.structure-1.1.1.css" />
+	<link rel="stylesheet" href="jquery.mobile/jquery.mobile.theme-1.1.1.css" />
+	<link rel="stylesheet" href="barecodepwd.css" />
+	
+	<script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
+	<script src="jquery.mobile/jquery-1.7.1.js"></script>
+	<script src="jquery.mobile/jquery.mobile-1.1.1.js"></script>
+	
+	<!-- End of Debug mode - css & js -->
+	
+	<!-- Production mode - css & js -->
+	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile-1.1.1.min.css" />
+	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile.structure-1.1.1.min.css" />
+	<link rel="stylesheet" href="jquery.mobile/jquery.mobile.theme-1.1.1.min.css" />
+	<link rel="stylesheet" href="barecodepwd.css" />
+	
+	<script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
+	
+	<!--
+	<script>
+		var userAgent = navigator.userAgent + '';
+		if (userAgent.indexOf('iPhone') > -1) {
+		  document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+		  var mobile_system = 'iphone';
+		} else if (userAgent.indexOf('Android') > -1) {
+		  document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+		  var mobile_system = 'android';
+		} else {
+		  var mobile_system = '';
+		}
+	</script> -->
+	
+	<script src="jquery.mobile/jquery-1.7.1.js"></script>
+	<script src="jquery.mobile/jquery.mobile-1.1.1.min.js"></script>
+	<!-- End of production mode - css -->
+	
+	<!-- your scripts here -->
+	<!--<script src="barecodepwd.js"></script>-->
+	
+</head>
+<body>
+
+<div data-role="page">
+
+    	<!-- <div data-role="header">
+    		<h1>Single page</h1>
+    	</div> --> <!-- /header -->
+
+    	<div data-role="content">	
+    		<img src="images/zxing.png">
+    	</div><!-- /content -->
+
+    	<div data-role="footer" data-id="menu" data-position="fixed">
+    		<div data-role="navbar" data-iconpos="left">
+		<ul>
+			<li><a href="index.html" data-transition="slide" data-icon="home" class="ui-btn-active ui-state-persist">Scan</a></li>
+			<li><a href="list.html"data-transition="slide" data-icon="search">Codes</a></li>
+			<li><a href="parameters.html"data-transition="slide" data-icon="star">Param&egrave;tres</a></li>
+		</ul>
+	</div><!-- /navbar -->
+    	</div><!-- /footer -->
+
+    </div><!-- /page -->
+
+
+</body>
+</html>

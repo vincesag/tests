@@ -1,0 +1,241 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" /> -->
+	<title>Display the keys</title>
+	
+	<!-- Debug mode - css & js
+	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile-1.1.1.css" />
+	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile.structure-1.1.1.css" />
+	<link rel="stylesheet" href="jquery.mobile/jquery.mobile.theme-1.1.1.css" />
+	<link rel="stylesheet" href="barecodepwd.css" />
+	
+	<script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
+	<script src="jquery.mobile/jquery-1.7.1.js"></script>
+	<script src="jquery.mobile/jquery.mobile-1.1.1.js"></script>
+	
+	<!-- End of Debug mode - css & js -->
+	
+	<!-- Production mode - css & js -->
+	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile-1.1.1.min.css" />
+	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile.structure-1.1.1.min.css" />
+	<link rel="stylesheet" href="jquery.mobile/jquery.mobile.theme-1.1.1.min.css" />
+	<link rel="stylesheet" href="barecodepwd.css" />
+	
+	<script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
+	
+	<!--
+	<script>
+		var userAgent = navigator.userAgent + '';
+		if (userAgent.indexOf('iPhone') > -1) {
+		  document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+		  var mobile_system = 'iphone';
+		} else if (userAgent.indexOf('Android') > -1) {
+		  document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+		  var mobile_system = 'android';
+		} else {
+		  var mobile_system = '';
+		}
+	</script>
+	-->
+	
+	<script src="jquery.mobile/jquery-1.7.1.js"></script>
+	<script src="jquery.mobile/jquery.mobile-1.1.1.min.js"></script>
+	<!-- End of production mode - css -->
+	
+	<!-- your scripts here -->
+	<!--<script src="barecodepwd.js"></script>-->
+	
+
+</head>
+<body>
+
+<div data-role="content">
+	
+		<div data-role="header">
+			<h1>P4Pass</h1>
+			<a href="list.html" data-icon="arrow-l" data-iconpos="notext" data-direction="reverse" data-rel="back">Retour</a>
+			<!--<a href="#" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>-->
+			<a href="addkey.html" data-icon="plus" data-iconpos="notext" data-rel="dialog" data-transition="fade">Ajout d'une clé</a>
+		</div><!-- /header -->
+
+    	<div data-role="content">
+			<div data-role="collapsible"  data-collapsed="true">
+				<h3>Clé xxx</h3>
+				<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">
+					<!--<li data-role="list-divider">Edition</li>-->
+					<li>
+						<a href="#">Nom:          xxx</a>
+					</li>
+					<li data-role="fieldcontain">
+						<a href="#">Mot de passe:      ********</a>
+						<!--<Label for="slider3">Afficher:</label>
+						<select name="slider3" id="slider3" data-role="slider">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>-->
+					</li>
+					<li>
+						<a href="#">Date de début:        23/07/2012</a>
+					</li>
+					<li>
+						<a href="#">Date de fin:        23/07/2014</a>
+					</li>
+					<li>
+						<a href="#">
+							<h3>Commentaire:</h3>
+							<p>Un bla-bla pas trop long sur l'utilisation de la clé ou des remarques éventuelles</p>
+						</a>
+					</li>
+					<li data-role="fieldcontain">
+						<label for="slider1">Favoris:</label>
+						<select name="slider1" id="slider1" data-role="slider">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</li>
+					<li data-role="fieldcontain">
+						<label for="slider2">Critique:</label>
+						<select name="slider2" id="slider2" data-role="slider">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</li>
+					<li data-role="fieldcontain">
+						<!--<a href="#">Icône</a>-->
+						<label for="select-choice-1" class="select">Icône:</label>
+						<select name="select-choice-1" id="select-choice-1">
+							<option value="standard">Icône 1</option>
+							<option value="rush">Icône 2</option>
+							<option value="express">Icône 3</option>
+							<option value="overnight">Icône 4</option>
+						</select>
+					</li>
+				</ul>
+			</div><!-- /collapsible 1 -->
+			
+			<div data-role="collapsible">
+				<h3>Clé lambda</h3>
+				<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">
+					<!--<li data-role="list-divider">Edition</li>-->
+					<li>
+						<a href="#">Nom:          lambda</a>
+					</li>
+					<li data-role="fieldcontain">
+						<a href="#">Mot de passe:      ********</a>
+						<!--<Label for="slider3">Afficher:</label>
+						<select name="slider3" id="slider3" data-role="slider">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>-->
+					</li>
+					<li>
+						<a href="#">Date de début:        23/07/2012</a>
+					</li>
+					<li>
+						<a href="#">Date de fin:        23/07/2014</a>
+					</li>
+					<li>
+						<a href="#">
+							<h3>Commentaire:</h3>
+							<p>Un bla-bla pas trop long sur l'utilisation de la clé ou des remarques éventuelles</p>
+						</a>
+					</li>
+					<li data-role="fieldcontain">
+						<label for="slider1">Favoris:</label>
+						<select name="slider1" id="slider1" data-role="slider">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</li>
+					<li data-role="fieldcontain">
+						<label for="slider2">Critique:</label>
+						<select name="slider2" id="slider2" data-role="slider">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</li>
+					<li data-role="fieldcontain">
+						<!--<a href="#">Icône</a>-->
+						<label for="select-choice-1" class="select">Icône:</label>
+						<select name="select-choice-1" id="select-choice-1">
+							<option value="standard">Icône 1</option>
+							<option value="rush">Icône 2</option>
+							<option value="express">Icône 3</option>
+							<option value="overnight">Icône 4</option>
+						</select>
+					</li>
+				</ul>
+			</div><!-- /collapsible 2 -->
+			
+			<div data-role="collapsible">
+				<h3>Clé numéro 2345</h3>
+				<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">
+					<!--<li data-role="list-divider">Edition</li>-->
+					<li>
+						<a href="#">Nom:          numéro 2345</a>
+					</li>
+					<li data-role="fieldcontain">
+						<a href="#">Mot de passe:      ********</a>
+						<!--<Label for="slider3">Afficher:</label>
+						<select name="slider3" id="slider3" data-role="slider">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>-->
+					</li>
+					<li>
+						<a href="#">Date de début:        23/07/2012</a>
+					</li>
+					<li>
+						<a href="#">Date de fin:        23/07/2014</a>
+					</li>
+					<li>
+						<a href="#">
+							<h3>Commentaire:</h3>
+							<p>Un bla-bla pas trop long sur l'utilisation de la clé ou des remarques éventuelles</p>
+						</a>
+					</li>
+					<li data-role="fieldcontain">
+						<label for="slider1">Favoris:</label>
+						<select name="slider1" id="slider1" data-role="slider">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</li>
+					<li data-role="fieldcontain">
+						<label for="slider2">Critique:</label>
+						<select name="slider2" id="slider2" data-role="slider">
+							<option value="off">Off</option>
+							<option value="on">On</option>
+						</select>
+					</li>
+					<li data-role="fieldcontain">
+						<!--<a href="#">Icône</a>-->
+						<label for="select-choice-1" class="select">Icône:</label>
+						<select name="select-choice-1" id="select-choice-1">
+							<option value="standard">Icône 1</option>
+							<option value="rush">Icône 2</option>
+							<option value="express">Icône 3</option>
+							<option value="overnight">Icône 4</option>
+						</select>
+					</li>
+				</ul>
+			</div><!-- /collapsible 3 -->	
+    	</div><!-- /content -->
+
+		<div data-role="footer" data-id="menu" data-position="fixed">
+    		<div data-role="navbar" data-iconpos="left">
+			<ul>
+				<li><a href="index.html" data-transition="slideup" data-icon="home">Scan</a></li>
+				<li><a href="list.html"data-transition="slide" data-icon="search" class="ui-btn-active ui-state-persist">Codes</a></li>
+				<li><a href="parameters.html" data-transition="slide" data-icon="star">Param&egrave;tres</a></li>
+			</ul>
+			</div><!-- /navbar -->
+    	</div><!-- /footer -->
+
+</div><!-- /page -->
+    
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" /> -->
+	<title>Liste des mots de passe</title>
+	
+	<!-- Debug mode - css & js
+	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile-1.1.1.css" />
+	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile.structure-1.1.1.css" />
+	<link rel="stylesheet" href="jquery.mobile/jquery.mobile.theme-1.1.1.css" />
+	<link rel="stylesheet" href="barecodepwd.css" />
+	
+	<script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
+	<script src="jquery.mobile/jquery-1.7.1.js"></script>
+	<script src="jquery.mobile/jquery.mobile-1.1.1.js"></script>
+	
+	<!-- End of Debug mode - css & js -->
+	
+	<!-- Production mode - css & js -->
+	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile-1.1.1.min.css" />
+	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile.structure-1.1.1.min.css" />
+	<link rel="stylesheet" href="jquery.mobile/jquery.mobile.theme-1.1.1.min.css" />
+	<link rel="stylesheet" href="barecodepwd.css" />
+	
+	<script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
+	
+	<!--
+	<script>
+		var userAgent = navigator.userAgent + '';
+		if (userAgent.indexOf('iPhone') > -1) {
+		  document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+		  var mobile_system = 'iphone';
+		} else if (userAgent.indexOf('Android') > -1) {
+		  document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+		  var mobile_system = 'android';
+		} else {
+		  var mobile_system = '';
+		}
+	</script>
+	-->
+	
+	<script src="jquery.mobile/jquery-1.7.1.js"></script>
+	<script src="jquery.mobile/jquery.mobile-1.1.1.min.js"></script>
+	<!-- End of production mode - css -->
+	
+	<!-- your scripts here -->
+	<!--<script src="barecodepwd.js"></script>-->
+	
+</head>
+<body>
+
+<div data-role="page">
+
+		<div data-role="header">
+			<h1>P4Pass</h1>
+			<!--<a href="#" data-icon="home" data-iconpos="notext" data-direction="reverse">Home</a>-->
+			<a href="addcategory.html" data-icon="plus" data-iconpos="left" data-rel="dialog" data-transition="fade">catégorie</a>
+		</div><!-- /header -->
+		
+		<!-- Version nested -->
+		<div data-role="content">
+    		<!--<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">-->
+			<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider">Mes listes de codes barre par catégorie</li>
+				<li>
+					<h3>Tous les codes barre</h3>
+					<p>Liste de tous les codes barre enregistrés</p>
+					<span class="ui-li-count">13</span>
+					<!--<ul  data-split-icon="gear">-->
+					<ul  data-role="listview" data-split-icon="delete" data-filter="true">
+						<li>
+							<a href="displaykey.html">
+								<img src="images/scan.png" />
+								<h3>Garage</h3>
+								<p>Code d'accès au garage</p>
+								<p class="ui-li-aside"><strong>Accès</strong></p>
+							</a>
+							<a href="#" data-rel="dialog" data-transition="slideup">Supprimer</a>
+						</li>
+						<li>
+							<a href="displaykey.html">
+								<img src="images/scan.png" />
+								<h3>Maison</h3>
+								<p>Code d'accès portail maison</p>
+								<p class="ui-li-aside"><strong>Accès</strong></p>
+							</a>
+							<a href="#" data-rel="dialog" data-transition="slideup">Supprimer</a>
+						</li>
+						<li>
+							<a href="displaykey.html">
+								<img src="images/scan.png" />
+								<h3>PC personnel</h3>
+								<p>Mot de passe Windows</p>
+								<p class="ui-li-aside"><strong>Informatique</strong></p>
+							</a>
+							<a href="#" data-rel="dialog" data-transition="slideup">Supprimer</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h3>Accès physiques</h3>
+					<span class="ui-li-count">3</span>
+					<!--<ul>-->
+					<ul  data-role="listview" data-split-icon="delete" data-filter="true">
+						<li>
+							<a href="displaykey.html">
+								<img src="images/scan.png" />
+								<h3>Garage</h3>
+								<p>Code d'accès au garage</p>
+							</a>
+							<a href="#" data-rel="dialog" data-transition="slideup">Supprimer</a>
+						</li>
+						<li>
+							<a href="displaykey.html">
+								<img src="images/scan.png" />
+								<h3>Maison</h3>
+								<p>Code d'accès portail maison</p>
+							</a>
+							<a href="#" data-rel="dialog" data-transition="slideup">Supprimer</a>
+						</li>
+						<li>
+							<a href="displaykey.html">
+								<img src="images/scan.png" />
+								<h3>Bureau</h3>
+								<p>Code d'accès porte principale</p>
+							</a>
+							<a href="#" data-rel="dialog" data-transition="slideup">Supprimer</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h3>Informatique</h3>
+					<span class="ui-li-count">4</span>
+					<!--<ul>-->
+					<ul  data-role="listview" data-split-icon="delete" data-filter="true">
+						<li>
+							<a href="displaykey.html">
+								<img src="images/scan.png" />
+								<h3>Serveur principal</h3>
+								<p>Mot de passe root</p>
+							</a>
+							<a href="#" data-rel="dialog" data-transition="slideup">Supprimer</a>
+						</li>
+						<li>
+							<a href="displaykey.html">
+								<img src="images/scan.png" />
+								<h3>PC personnel</h3>
+								<p>Mot de passe Windows</p>
+							</a>
+							<a href="#" data-rel="dialog" data-transition="slideup">Supprimer</a>
+						</li>
+						<li>
+							<a href="displaykey.html">
+								<img src="images/scan.png" />
+								<h3>Portable</h3>
+								<p>Mot de passe Unix</p>
+							</a>
+							<a href="#" data-rel="dialog" data-transition="slideup">Supprimer</a>
+						</li>
+						<li>
+							<a href="displaykey.html">
+								<img src="images/scan.png" />
+								<h3>PC bureau</h3>
+								<p>Mot de passe root</p>
+							</a>
+							<a href="#" data-rel="dialog" data-transition="slideup">Supprimer</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h3>Web</h3>
+					<span class="ui-li-count">3</span>
+					<!--<ul>-->
+					<ul  data-role="listview" data-split-icon="delete" data-filter="true">
+						<li>
+							<a href="displaykey.html">
+								<img src="images/scan.png" />
+								<h3>Site p4pass</h3>
+								<p>Login site</p>
+							</a>
+							<a href="#" data-rel="dialog" data-transition="slideup">Supprimer</a>
+						</li>
+						<li>
+							<a href="displaykey.html">
+								<img src="images/scan.png" />
+								<h3>Site maison du monde</h3>
+								<p>Login site</p>
+							</a>
+							<a href="#" data-rel="dialog" data-transition="slideup">Supprimer</a>
+						</li>
+						<li>
+							<a href="displaykey.html">
+								<img src="images/scan.png" />
+								<h3>Le canard enchainé</h3>
+								<p>Login site</p>
+							</a>
+							<a href="#" data-rel="dialog" data-transition="slideup">Supprimer</a>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h3>Perso</h3>
+					<span class="ui-li-count">3</span>
+					<!--<ul>-->
+					<ul  data-role="listview" data-split-icon="delete" data-filter="true">
+						<li><a href="displaykey.html">Garage</a>
+						<li><a href="displaykey.html">Maison</a>
+						<li><a href="displaykey.html">Bureau</a>
+					</ul>
+				</li>
+			</ul>
+			
+			<ul data-role="listview" data-inset="true">
+				<li data-role="list-divider">Mes listes de clés</li>
+				<li>
+					<a href="listkey.html">
+					<h3>Toutes les clés de tous les codes barre</h3>
+					<p>Liste de toutes les clés enregistrées</p>
+					</a>
+					<span class="ui-li-count">27</span>
+				</li>
+				<li>
+					<a href="listkey.html">
+					<h3>Mes favoris</h3>
+					<p>Liste des clés les plus utilisées</p>
+					</a>
+					<span class="ui-li-count">3</span>
+				</li>
+			</ul>
+    	</div><!-- /content -->
+
+		<!-- Version classique -->
+		<!--
+    	<div data-role="content">	
+    		<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">
+				<li data-role="list-divider">Mes groupes</li>
+				<li><a href="#">Accès physiques</a></li>
+				<li><a href="#">Informatique</a></li>
+				<li><a href="#">Web</a></li>
+				<li><a href="#">Perso</a></li>
+			</ul>
+    	</div><!-- /content -->
+
+    	<div data-role="footer" data-id="menu" data-position="fixed">
+    		<div data-role="navbar" data-iconpos="left">
+			<ul>
+				<li><a href="index.html" data-transition="slideup" data-icon="home">Scan</a></li>
+				<li><a href="list.html"data-transition="slide" data-icon="search" class="ui-btn-active ui-state-persist">Codes</a></li>
+				<li><a href="parameters.html" data-transition="slide" data-icon="star">Param&egrave;tres</a></li>
+			</ul>
+			</div><!-- /navbar -->
+    	</div><!-- /footer -->
+
+    </div><!-- /page -->
+
+
+</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no;" /> -->
+	<title>Add a new key</title>
+	
+	<!-- Debug mode - css & js
+	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile-1.1.1.css" />
+	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile.structure-1.1.1.css" />
+	<link rel="stylesheet" href="jquery.mobile/jquery.mobile.theme-1.1.1.css" />
+	<link rel="stylesheet" href="barecodepwd.css" />
+	
+	<script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
+	<script src="jquery.mobile/jquery-1.7.1.js"></script>
+	<script src="jquery.mobile/jquery.mobile-1.1.1.js"></script>
+	
+	<!-- End of Debug mode - css & js -->
+	
+	<!-- Production mode - css & js -->
+	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile-1.1.1.min.css" />
+	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile.structure-1.1.1.min.css" />
+	<link rel="stylesheet" href="jquery.mobile/jquery.mobile.theme-1.1.1.min.css" />
+	<link rel="stylesheet" href="barecodepwd.css" />
+	
+	<script type="text/javascript" charset="utf-8" src="cordova-2.0.0.js"></script>
+	
+	<!--
+	<script>
+		var userAgent = navigator.userAgent + '';
+		if (userAgent.indexOf('iPhone') > -1) {
+		  document.write('<script src="js/lib/cordova-iphone.js"></sc' + 'ript>');
+		  var mobile_system = 'iphone';
+		} else if (userAgent.indexOf('Android') > -1) {
+		  document.write('<script src="js/lib/cordova-android.js"></sc' + 'ript>');
+		  var mobile_system = 'android';
+		} else {
+		  var mobile_system = '';
+		}
+	</script>
+	-->
+	
+	<script src="jquery.mobile/jquery-1.7.1.js"></script>
+	<script src="jquery.mobile/jquery.mobile-1.1.1.min.js"></script>
+	<!-- End of production mode - css -->
+	
+	<!-- your scripts here -->
+	<!--<script src="barecodepwd.js"></script>-->
+	
+</head>
+<body>
+
+<div data-role="dialog">
+	<div data-role="header">
+		<h1>Ajout d'une clé</h1>
+	</div>
+	<div data-role="content">
+	<!--<ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">-->
+	<ul data-role="listview" data-inset="true">
+		<!--<li data-role="list-divider">Key xxx</li>-->
+		<li data-role="fieldcontain">
+			<label for="name">Nom:</label>
+			<input type="text" name="name" id="name" value=""  />
+		</li>
+		
+		<li data-role="fieldcontain">
+			<label for="textarea">Détail:</label>
+			<textarea cols="40" rows="8" name="textarea" id="textarea"></textarea>
+		</li>
+	</ul>
+	<a href="list.html" data-role="button" data-rel="back" data-theme="b">Ca marche!</a>       
+	</div><!-- /content -->
+
+		<!--
+    	<div data-role="footer" data-id="menu" data-position="fixed">
+    		<div data-role="navbar" data-iconpos="notext">
+			<ul>
+				<li><a href="index.html" data-transition="slideup">One</a></li>
+				<li><a href="list.html"data-transition="slideup">Two</a></li>
+				<li><a href="parameters.html" data-transition="slide" class="ui-btn-active ui-state-persist">Three</a></li>
+			</ul>
+			</div>
+    	</div><!-- /footer -->
+
+</div><!-- /dialog -->
+    
+</body>
+</html>
